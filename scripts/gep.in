@@ -1,0 +1,8 @@
+#!@GUILE@ --no-auto-compile
+-*- scheme -*-
+-*- geiser-scheme-implementation: guile -*-
+!#
+
+(use-modules (example core))
+
+(apply run-gep (command-line))
