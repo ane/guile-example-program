@@ -1,6 +1,6 @@
 dnl -*- Autoconf -*-
 
-AC_INIT([gep], [m4_translit(m4_esyscmd([cat VERSION]),m4_newline)])
+AC_INIT([guile-example-program], [m4_translit(m4_esyscmd([cat VERSION]),m4_newline)])
 AC_CONFIG_AUX_DIR([build-aux])
 AM_INIT_AUTOMAKE([gnu color-tests -Wall -Wno-portability foreign])
 AM_SILENT_RULES([yes])
@@ -27,6 +27,7 @@ AC_CONFIG_FILES([pre-inst-env], [chmod +x pre-inst-env])
 
 AC_OUTPUT
 
+dnl This stuff is from guile-json... I think?
 dnl This is just for printing $libdir below.
 LIBDIR=`eval echo $libdir`
 LIBDIR=`eval echo $LIBDIR`
@@ -43,3 +44,4 @@ echo "If you want to install in Guile system's directory re-run with:"
 echo
 echo "    --prefix=$GUILE_PREFIX --libdir=$GUILE_LIBDIR"
 echo
+
