@@ -1,4 +1,4 @@
-# Guile Example Program, a skeleton for an executable Guile program
+# A project template for an executable Guile program
 
 This repository is an example template for creating an application that is
 programmed using [Guile](https://www.gnu.org/software/guile/). This repository
@@ -26,7 +26,7 @@ While developing, if you want to run the program, do
 ./pre-inst-env scripts/gep <ARGS>
 ```
 
-so that the load path is correct. This needs `./configure` to have been run.
+so that the load path is correct. This needs `./configure` to have been run. 
 
 ## Installation
 
