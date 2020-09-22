@@ -21,7 +21,7 @@ AM_TESTS_ENVIRONMENT = abs_top_srcdir="$(abs_top_srcdir)" GUILE_AUTO_COMPILE=0
 SCM_LOG_DRIVER =                                          \
   $(top_builddir)/pre-inst-env                            \
   $(GUILE) --no-auto-compile -e main                      \
-  $(top_srcdir)/build-aux/test-driver.scm
+  $(top_srcdir)/test-driver.scm
 
 AM_SCM_LOG_DRIVER_FLAGS = --brief=yes
 
